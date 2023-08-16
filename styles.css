@@ -1,0 +1,191 @@
+:root {
+    --bg-color: #FFF2D3;
+    --marking-color: #3B8EE8;
+    --tick-color: #97CFFF;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0; 
+    width: 100vw;
+    height: 100vh; 
+}
+
+
+.clock-container1, .clock-container2 {
+    height: 50%;
+    background-color: var(--bg-color);
+}
+
+
+.container {
+    height: 50%; 
+    background-color: #FD8274;
+}
+
+
+
+.locations1, .locations2 {
+    height: 3rem;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    gap: 14rem;
+}
+
+
+.locations1 {
+    padding-top: 1rem;
+}
+
+.locations2 {
+    padding-top: 1rem;
+}
+
+
+p {
+    width: 11rem;
+    color: white;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 3px;
+    padding: .8rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px grey;
+
+}
+
+
+.clocks1, .clocks2 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    gap: 11rem;
+    padding-top: 2rem;
+    
+}
+
+
+.clocks1 {
+    padding-top: 4rem;
+}
+
+
+
+.clock {
+    width: 15rem;
+    height: 15rem;
+    border: 6px solid black; 
+    border-radius: 50%;
+    box-shadow: 4px 4px 7px grey;
+    
+}
+
+
+.clock-face {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.hand {
+    background-color: black;
+    border-radius: 3px;
+    width: 50%; 
+    right: 50%; 
+    height: 6px; 
+    position: absolute; 
+    top: 49%; 
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.02s cubic-bezier(0.42, 0, 0, 3.84); 
+}
+
+
+.dot {
+    width: 7%;
+    height: 7%; 
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    top: 46%;
+    left: 46.7%; 
+    z-index: 20; 
+}
+
+
+.hour-hand {
+    width: 37%; 
+    z-index: 3;
+    height: 8px; 
+}
+
+
+.minute-hand {
+    width: 45%;
+    height: 3px;
+    z-index: 5; 
+}
+
+.second-hand {
+    background-color: #DE1537; 
+    width: 47%; 
+    height: 3px;
+}
+
+
+.marking {
+    width: 9%
+}
+
+.marking-one {
+    background-color: var(--marking-color);
+    height: 3px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 47%;
+    top: 8%;
+    z-index: 0;
+}
+
+.marking-two {
+    background-color: var(--marking-color);
+    height: 3px;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 88%;
+    top: 47%;
+    z-index: 0;
+}
+
+.marking-three {
+    background-color: var(--marking-color);
+    height: 3px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 47%;
+    bottom: 8%;
+    z-index: 0;
+}
+
+
+.marking-four {
+    background-color: var(--marking-color);
+    height: 3px;
+    position: absolute;
+    transform: rotate(180deg);
+    right: 88%;
+    top: 47%;
+    z-index: 0;
+}
+
